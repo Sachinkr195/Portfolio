@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Review from './components/Review'
 import Allreviews from './components/Allreviews'
 import { useState, useEffect, createContext } from "react";
+import axios from 'axios'
 
 const App = () => {
   useEffect(() => {
