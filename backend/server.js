@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(cookieParser());
 connectdb();
 
-console.log(process.env.FRONTEND_URL)
+console.log(process.env.FRONTEND)
 app.use(cors({
-  origin: `${process.env.FRONTEND_URL}`, // Replace with your frontend URL
+  origin: `${process.env.FRONTEND}`, // Replace with your frontend URL
   credentials: true
 }));
 
