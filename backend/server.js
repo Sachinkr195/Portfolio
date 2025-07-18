@@ -28,7 +28,7 @@ app.use('/api/review', reviewRoutes);
 app.use('/api/user', userRoutes); // register, login, logout
 
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.send('API is running...');
 });
 
