@@ -9,6 +9,11 @@ import Review from './components/Review'
 import Allreviews from './components/Allreviews'
 
 const App = () => {
+  useEffect(() => {
+  axios.get(`${import.meta.env.VITE_BACKEND_URL}/test`)
+    .then(res => console.log(res.data))
+    .catch(err => console.error("Connection error:", err));
+}, []);
   return (
     <div className='flex-col items-center justify-center'>
       <Navbar/>
